@@ -16,7 +16,7 @@ body {
     margin-top: 85px;
     padding: 30px;
     background-color: transparent;
-    transition: background-color ease-in-out 0.275s;
+    transition: background-color ease-in-out 0.2s;
 }
     
 .container {
@@ -210,3 +210,11 @@ header {
     header::after {
         content: url('../Images/krans2v.gif');
     }
+
+.olle {
+    color: #838b91;
+    position: fixed;
+    bottom: 5px;
+    right: 10px;
+    font-size: 12px;
+}
