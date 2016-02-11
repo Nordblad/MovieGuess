@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - MG Admin</title>
+    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+    @*<script src="~/Scripts/modernizr-2.6.2.js"></script>*@
+</head>
+<body>
+
+
+    <div class="container">
+        <div class="admin-section title">
+            <h2>MovieGuess - Admin</h2>
+        </div>
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - Olov Nordblad PROG15</p>
+        </footer>
+    </div>
+
+    <script src="~/Scripts/jquery-2.2.0.min.js"></script>
+    <script src="~/Scripts/AdminScripts.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.0/knockout-min.js"></script>
+</body>
+</html>

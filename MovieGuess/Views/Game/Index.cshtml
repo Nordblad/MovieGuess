@@ -1,0 +1,86 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Guess the movie! @Model</title>
+    <link href="~/Content/GameStyles.css" rel="stylesheet" />
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,400italic,700,700italic' rel='stylesheet' type='text/css'> @*TRIMMA BORT SEN!!!! FÖR MÅNGA FONTER!!!*@
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <header>INL&Auml;MNING TV&Aring;</header>
+    <div class="big-container">
+        <div class="container">
+            <div class="col-movie">
+                <div id="title" class="clue">-</div>
+                <div class="plot-container">
+                    <div id="plot" class="clue">-</div>
+                </div>
+                <div class="details-table">
+                    <div class="details-row">
+                        <div class="cell left">DIRECTOR</div>
+                        <div class="cell clue" id="director">?</div>
+                    </div>
+                    <div class="details-row">
+                        <div class="cell left">ACTORS</div>
+                        <div class="cell clue" id="actor1">?</div>
+                    </div>
+                    <div class="details-row">
+                        <div class="cell left"></div>
+                        <div class="cell clue" id="actor2">?</div>
+                    </div>
+                    <div class="details-row">
+                        <div class="cell left"></div>
+                        <div class="cell clue" id="actor3">?</div>
+                    </div>
+                    <div class="details-row">
+                        <div class="cell left"></div>
+                        <div class="cell clue" id="actor4">?</div>
+                    </div>
+                    <div class="details-row">
+                        <div class="cell left">GENRE</div>
+                        <div class="cell clue" id="genre">?</div>
+                    </div>
+                    <div class="details-row">
+                        <div class="cell left">YEAR</div>
+                        <div class="cell clue" id="year">?</div>
+                    </div>
+                </div>
+
+                <div class="progress-bar">
+                    <span id="timer-text"></span>
+                    <div class="bar-inner" id="timer-bar"></div>
+                </div>
+                <div id="login">
+                    <input type="text" id="username" placeholder="Enter username" maxlength="20" />
+                    <button id="join">JOIN</button>
+                </div>
+                <div id="chat-input" hidden>
+                    <input type="text" id="message" maxlength="100" />
+                    <button id="send">SEND</button>
+                </div>
+
+            </div>
+            <div class="col-chat">
+                <div class="chat" id="chat"></div>
+            </div>
+        </div>
+    </div>
+
+    <div style="position:fixed; bottom: 5px; left: 5px;">
+        <button id="cheat">Win!</button>
+    </div>
+
+    <script src="~/Scripts/jquery-2.2.0.min.js"></script>
+    <script src="~/Scripts/jquery.signalR-2.2.0.min.js"></script>
+    <script src="~/signalr/hubs"></script>
+    <script src="~/Scripts/GameScripts.js"></script>
+</body>
+</html>

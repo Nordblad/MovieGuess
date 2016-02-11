@@ -1,0 +1,40 @@
+﻿@using MovieGuess.Models
+@model IEnumerable<Movie>
+@{
+    ViewBag.Title = "Index";
+}
+
+<div class="admin-section" id="message" hidden>
+</div>
+
+<div class="admin-section">
+    <h2>Add movie</h2>
+    <label>Title <input type="text" id="title" /></label>
+    <button id="search">Search</button>
+    <div id="result"></div>
+    <div id="add-button">
+        @*@using(Html.BeginForm())
+        {
+            <input type="hidden" id="movieid" name="movieid" />
+            <button class="add-btn" type="submit">Add</button>
+        }*@
+        <button id="addbtn">Add</button>
+
+        <ul class="details-list">
+            <li>Title: <span data-bind="text: Title"></span></li>
+            <li>Year: <span data-bind="text: Year"></span></li>
+            <li>Genre: <span data-bind="text: Genre"></span></li>
+        </ul>
+    </div>
+</div>
+<div class="admin-section">
+    <ul class="movie-list">
+        @foreach (Movie m in Model)
+        {
+            <li>
+                <p>@m.Title</p>
+                <div>@m.Year - @m.Genre</div>
+            </li>
+        }
+    </ul>
+</div>

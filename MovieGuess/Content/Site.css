@@ -1,0 +1,63 @@
+﻿html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    background-color: lightgray;
+}
+
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+}
+
+.admin-section {
+    padding: 15px;
+    background-color: whitesmoke;
+    margin-bottom: 25px;
+}
+.message-green {
+    background-color: lightgreen;
+}
+.message-red {
+    background-color: lightcoral;
+}
+.title {
+    text-align: center;
+    background-color: darkred;
+    color: whitesmoke;
+}
+.movie-list {
+    margin: 0;
+    padding: 0;
+}
+.movie-list li {
+    margin: 2px;
+    display: inline-block;
+    width: 245px;
+    height: 40px;
+    padding: 4px;
+}
+.movie-list li p {
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+}
+.movie-list li div {
+        color: darkslategray;
+    font-size: 12px;
+}
+
+
